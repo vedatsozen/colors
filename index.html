@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 id="h1font">You can change my color and background color from inputs on top left corner.</h1>
+
+<input id="color" type="color" oninput="changebgcolor()">
+
+<input id="fontcolor" type="color" oninput="changefontcolor()">
+
+</body>
+
+<script>
+
+function changebgcolor() {
+
+let color = document.getElementById("color").value;
+document.body.style.backgroundColor = color;
+
+}
+
+function changefontcolor() {
+
+let fontcolor = document.getElementById("fontcolor").value;
+document.getElementById("h1font").style.color = fontcolor;
+
+}
+
+</script>
+</html>
